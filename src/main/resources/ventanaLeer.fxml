@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox id="vbox1" fx:id="vboxDcha2" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" stylesheets="@ventanaLeerEstilos.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox id="hboxsuperior" alignment="CENTER_RIGHT" prefHeight="28.0" prefWidth="800.0">
+         <children>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Label id="labelSuperior" alignment="CENTER" contentDisplay="CENTER" text="Leer un cuento.">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Region prefHeight="200.0" prefWidth="200.0" visible="false" HBox.hgrow="ALWAYS" />
+            <Button id="botonCerrar" mnemonicParsing="false" onAction="#actionBotonCerrar" text="x">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+      <HBox id="hboxmedio" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="labelInfoCuento" styleClass="labels" text="Información del cuento" />
+         </children>
+      </HBox>
+      <VBox id="vboxinferior" alignment="CENTER" prefHeight="400.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TextArea id="cuadroTexto" fx:id="textArea" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="35.0" right="35.0" top="25.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextArea>
+            <HBox id="hboxBordeInferior" alignment="CENTER" prefHeight="76.0" prefWidth="800.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Button id="botonVolver" mnemonicParsing="false" onAction="#actionVolver" onMouseEntered="#actionRatonEntra" onMouseExited="#actionRatonSale" onMousePressed="#actionRatonApretado" onMouseReleased="#actionRatonSoltado" text="Volver a la lista">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

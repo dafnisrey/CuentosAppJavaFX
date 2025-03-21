@@ -1,0 +1,136 @@
+
+#splitpane1 {
+	-fx-background-color: #8a0478;
+    -fx-background-radius: 30px;
+	-fx-font-size: 14px;
+}
+
+#vboxizda {
+	-fx-background-color: #8a0478;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 9, 0, 0, 5);
+}
+
+#vboxdcha {
+	-fx-background-radius: 20px;
+    -fx-background-color: #8a0478;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 9, 0, 0, 5);
+}
+
+#hboxsuperior {
+    -fx-background-color: #f0f0f0;
+        -fx-background-radius: 30px;
+
+
+}
+
+#gridpanemedio {
+    //-fx-background-color: #69009d;
+    -fx-background-color: #8a0478;
+}
+
+#vboxinferior {
+    //-fx-background-color: #760b56;
+    -fx-background-color: #8a0478;
+}
+#hboxBordeInferior{
+    -fx-background-color: #69009d;
+        	-fx-background-radius: 20px;
+}
+
+
+.botones-menu{
+	-fx-background-color: white;
+	-fx-font-size: 20px;
+    -fx-font-smoothing-type: gray;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 9, 0, 0, 5);
+}
+#botonToggle{
+	-fx-background-color: black;
+	-fx-font-size: 12px;
+    -fx-font-smoothing-type: gray;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 9, 0, 0, 5);
+}
+
+.split-pane-divider {
+    -fx-background-color: transparent;
+	-fx-border-color: transparent;
+	-fx-pref-width: 0px;
+}
+
+#botonCerrar {
+    -fx-background-radius: 10px;
+	-fx-font-weight: bold;
+}
+#tabla {
+    -fx-background-color: black;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 9, 0, 0, 5);
+    -fx-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #e0e0e0;
+}
+
+#tabla .column-header {
+    -fx-background-radius: 5px;
+    -fx-background-color: white;
+    -fx-size: 40px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 3);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+#tabla .column-header-background {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+}
+
+#tabla .filler {
+    -fx-background-color: black;
+    -fx-background-radius: 5px;
+}
+
+.table-cell {
+    -fx-padding: 8px 10px;
+    -fx-text-fill: #e0e0e0;
+}
+
+.table-row-cell {
+    -fx-padding: 8px 0;
+    -fx-background-color: #282828;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #383838;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: black;
+    -fx-text-fill: black;
+}
+
+.table-view .placeholder .label {
+    -fx-text-fill: white;
+}
+.labels {
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 9, 0, 0, 5);
+	-fx-text-fill: white;
+}
+#labelResultados{
+	-fx-text-fill: white;
+}
+
+#labelSuperior{
+	-fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 9, 0, 0, 5);
+	-fx-text-fill: black;
+}
+
+.controles{
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 9, 0, 0, 5);
+}
+

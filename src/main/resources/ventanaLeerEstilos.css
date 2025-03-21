@@ -1,0 +1,64 @@
+#vbox1 {
+	-fx-background-radius: 20px;
+}
+
+#hboxsuperior {
+    -fx-background-color: #f0f0f0;
+    	-fx-background-radius: 20px;
+
+        //-fx-background-color: #72e0ff;
+
+}
+
+#hboxmedio {
+    -fx-background-color: #6afff5;
+        	-fx-background-radius: 20px;
+
+        //-fx-background-color: #72e0ff;
+
+}
+
+#vboxinferior {
+   -fx-background-color: #72e0ff;
+       // -fx-background-color: #72e0ff;
+
+}
+#hboxBordeInferior{
+-fx-background-color: #6afff5;
+        	-fx-background-radius: 20px;
+}
+
+#cuadroTexto {
+	-fx-background-radius: 20px;
+    -fx-font-size: 18px;
+    -fx-border-width: 2px;
+    -fx-border-color: #bf00ff;
+    -fx-border-style: solid;
+    -fx-border-opacity: 0.5;
+    -fx-border-radius: 5px;
+}
+
+#botonVolver {
+    -fx-background-color: white;
+	-fx-font-size: 20px;
+    -fx-font-smoothing-type: gray;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 5, 5);
+}
+
+#botonCerrar {
+    -fx-background-radius: 10px;
+	-fx-font-weight: bold;
+}
+#labelSuperior{
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 9, 0, 0, 5);
+	-tx-text-fill: black;
+}
+
+.labels{
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 9, 0, 0, 5);
+}

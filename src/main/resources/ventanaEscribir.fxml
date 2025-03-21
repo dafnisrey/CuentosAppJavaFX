@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vboxDcha2" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" stylesheets="@ventanaEscribirEstilos.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox id="hboxsuperior" alignment="CENTER_RIGHT" prefHeight="28.0" prefWidth="800.0">
+         <children>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Label id="labelSuperior" alignment="CENTER" styleClass="labels" text="Escribir un cuento.">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Button id="botonCerrar" mnemonicParsing="false" onAction="#actionBotonCerrar" text="x">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+      <HBox id="hboxInfo" alignment="CENTER" prefHeight="37.0" prefWidth="800.0">
+         <children>
+            <Label fx:id="labelInfoCuento" styleClass="labels" text="Escribe el cuento, rellena los campos y pulsa Guardar." />
+         </children>
+      </HBox>
+      <VBox id="vboxMedio" alignment="CENTER" prefHeight="433.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TextArea id="cuadroTexto" fx:id="textareaEscribir" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="25.0" left="35.0" right="35.0" top="25.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextArea>
+            <HBox alignment="CENTER" prefWidth="800.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <GridPane id="gridpaneInferior" alignment="CENTER" prefHeight="151.0" prefWidth="800.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="288.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="261.0" minWidth="10.0" prefWidth="242.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.0" minWidth="10.0" prefWidth="264.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label styleClass="labels" text="Título:">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="textfieldTitulo" prefHeight="24.0" prefWidth="163.0" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="60.0" prefWidth="269.0" GridPane.columnIndex="1">
+               <children>
+                  <Label styleClass="labels" text="Autor:">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="textfieldAutor" prefHeight="24.0" prefWidth="169.0" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Label styleClass="labels" text="Nacionalidad:">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="comboboxNacionalidad" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Label styleClass="labels" text="Categoría:">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="comboboxCategoria" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+               <children>
+                  <Button id="botonGuardar" mnemonicParsing="false" onAction="#actionGuardar" onMouseEntered="#actionRatonEntra" onMouseExited="#actionRatonSale" onMousePressed="#actionRatonApretado" onMouseReleased="#actionRatonSoltado" styleClass="botones" text="Guardar">
+                     <padding>
+                        <Insets left="15.0" right="15.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Label fx:id="labelMensaje" alignment="TOP_CENTER" contentDisplay="TOP" prefHeight="57.0" prefWidth="209.0" styleClass="labelsInfo" text="Rellena todos los campos." textAlignment="CENTER" wrapText="true">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin></Label>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </GridPane>
+      <HBox id="hboxInfoInferior" prefHeight="31.0" prefWidth="800.0">
+         <children>
+            <Button id="botonRestaurar" mnemonicParsing="false" onAction="#actionBorrarTodo" onMouseEntered="#actionRatonEntra" onMouseExited="#actionRatonSale" onMousePressed="#actionRatonApretado" onMouseReleased="#actionRatonSoltado" prefHeight="9.0" prefWidth="125.0" styleClass="botones" text="Restaurar">
+               <HBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Button>
+            <Label fx:id="labelRestaurar" prefHeight="15.0" prefWidth="435.0" styleClass="labelsInfo" text="Pulsa para borrar todos los cuentos añadidos.">
+               <font>
+                  <Font size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>

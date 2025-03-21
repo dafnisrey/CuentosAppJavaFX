@@ -1,0 +1,116 @@
+
+#splitpane1 {
+	-fx-background-color: #72e0ff;
+    -fx-background-radius: 30px;
+	-fx-font-size: 14px;
+}
+
+#vboxizda {
+	-fx-background-color: #72e0ff;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 9, 0, 0, 5);
+}
+
+#vboxdcha {
+	-fx-background-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 9, 0, 0, 5);
+}
+
+#hboxsuperior {
+    //-fx-background-color: #72e0ff;
+		-fx-background-radius: 20px;
+
+
+    -fx-background-color: #f0f0f0;
+}
+
+#gridpanemedio {
+    -fx-background-color: #72e0ff;
+    //-fx-background-color: #6afff5;
+}
+
+#vboxinferior {
+    -fx-background-color: #72e0ff;
+
+    //-fx-background-color: #b7ffe9;
+}
+
+#hboxBordeInferior{
+    -fx-background-color: #6afff5;
+        	-fx-background-radius: 20px;
+}
+
+
+.botones-menu{
+	-fx-background-color: white;
+	-fx-font-size: 20px;
+    -fx-font-smoothing-type: gray;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 9, 0, 0, 5);
+}
+
+#botonToggle{
+	-fx-background-color: white;
+	-fx-font-size: 12px;
+    -fx-font-smoothing-type: gray;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 9, 0, 0, 5);
+}
+
+.split-pane-divider {
+    -fx-background-color: transparent;
+	-fx-border-color: transparent;
+	-fx-pref-width: 0px;
+}
+
+#botonCerrar {
+    -fx-background-radius: 10px;
+	-fx-font-weight: bold;
+}
+
+#tabla {
+	-fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 9, 0, 0, 5);
+}
+
+#tabla .column-header{
+	-fx-background-radius: 10px;
+	-fx-background-color: #e7a4f4;
+	-fx-size: 40px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 9, 0, 0, 5);
+}
+
+#tabla .column-header-background{
+	-fx-background-color: transparent;
+	-fx-background-radius: 10px;
+
+}
+
+#tabla .filler{
+	-fx-background-color: white;
+	-fx-background-radius: 10px;
+}
+
+.table-cell {
+	-fx-padding: 0 0 0 10px;
+}
+
+.table-row-cell {
+	-fx-padding: 10px 0;
+}
+
+.labels {
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 9, 0, 0, 5);
+}
+#labelSuperior{
+	-fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 9, 0, 0, 5);
+	-fx-text-fill: black;
+}
+
+.controles{
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 9, 0, 0, 5);
+}
+
