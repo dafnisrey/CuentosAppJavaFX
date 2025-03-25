@@ -5,6 +5,10 @@
 + Redactar un nuevo cuento y guardarlo en la base de datos junto a todos los demás
 + Eliminar todos los cuentos guardados a partir del 7240, es decir, todos los cuentos guardados mediante la aplicación.
 
+
+![Captura de pantalla de la app de cuentos](Captura.png)
+
+
 ## Ejecución de la Aplicación
 
 Para ejecutar la aplicación, sigue estos pasos:
